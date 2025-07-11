@@ -39,7 +39,7 @@ img {
   border-radius: 8px;
   background-color: var(--primary-color);
   color: white;
-  transition: 0.2s;
+  transition: 2s;
   cursor: pointer;
 }
 
@@ -72,6 +72,22 @@ nav {
   font-weight: 800;
   font-size: 34px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.logo:hover {
+  scale: 1.2;
+  animation: rotate 0.3s linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 /* nav end  */
 
