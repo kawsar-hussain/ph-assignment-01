@@ -4,14 +4,21 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+}
 
+body {
   font-family: "Raleway", sans-serif;
+}
+
+img {
+  width: 100%;
+  display: block;
 }
 
 /* variables */
 :root {
-  --primary-color: #4e47ff;
-  --background-color: #d6dded;
+  --primary-color: #4d47ff;
+  --background-color: #f3f7ff;
   --dark50: rgba(0, 0, 0, 0.5);
   --dark1: #757575;
   --dark2: #b3b3b3;
@@ -29,7 +36,7 @@
   font-size: 16px;
   font-weight: bold;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   background-color: var(--primary-color);
   color: white;
   transition: 0.2s;
@@ -37,7 +44,7 @@
 }
 
 .btn:hover {
-  background-color: #5953ff;
+  background-color: #6b66ff;
   scale: 1.03;
 }
 
@@ -47,6 +54,8 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  height: 100vh;
 }
 
 nav {
@@ -62,15 +71,213 @@ nav {
   text-transform: uppercase;
 }
 
-.header-body {
+.banner {
   padding: 155px 270px;
   text-align: center;
 }
 
-.header-title {
+.banner__title {
   font-size: 65px;
   text-transform: bold;
   margin-bottom: 40px;
 }
-
 /* header end here */
+
+/* main start here */
+main {
+  background-color: var(--background-color);
+  padding: 0 150px;
+}
+
+/* action start */
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 115px 0;
+}
+.action__title {
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.action__desc {
+  color: var(--dark50);
+  padding: 23px 0;
+}
+.action__img {
+  width: 450px;
+  border-radius: 45px;
+}
+/* action end */
+
+/* Productive Users start */
+.productive-users {
+  padding: 50px 140px;
+  text-align: center;
+  background-color: rgba(78, 71, 255, 0.1);
+  border-radius: 24px;
+}
+
+.productive-users__title {
+  font-size: 38px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.productive-users__numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  font-size: 80px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.status {
+  color: var(--dark50);
+}
+/* Productive Users end */
+
+/* user feedback start  */
+.user-feedback {
+  padding: 140px 0;
+}
+
+.user-feedback-info {
+  display: flex;
+  gap: 20px;
+}
+
+.star-icon {
+  display: flex;
+  gap: 4px;
+}
+
+.user-feedback-title {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feedback-info {
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.star-icon img {
+  width: 20px;
+  height: 20px;
+}
+
+.feedback-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 24px;
+}
+
+.feedback-desc {
+  margin: 10px 0 24px;
+}
+
+.review {
+  display: flex;
+  gap: 15px;
+}
+
+.reviewer-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.reviewer-name {
+  color: var(--dark1);
+  font-weight: bold;
+}
+
+.review-date {
+  color: var(--dark2);
+  font-size: 14px;
+}
+/* user feedback end  */
+
+/* focus start */
+.focus {
+  padding: 70px 150px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 14px;
+}
+
+.focus-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.focus-subtitle {
+  padding: 30px 0;
+  color: var(--dark1);
+}
+
+.focus img {
+  border-radius: 50px;
+}
+
+.focus .btn {
+  margin-bottom: 30px;
+}
+/* focus end */
+
+/* contact start */
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 90px;
+  padding: 70px 0;
+}
+
+.contact-title {
+  font-family: "Racing Sans One", sans-serif;
+  color: rgb(74, 74, 74);
+  font-size: 80px;
+  font-weight: bold;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form input,
+textarea {
+  margin-top: 10px;
+}
+
+form input,
+textarea {
+  padding: 15px 32px;
+  font-size: 16px;
+  border: none;
+  width: 400px;
+  border-radius: 8px;
+
+  font-family: inter, sans-serif;
+}
+
+textarea {
+  resize: none;
+  height: 140px;
+}
+
+form .btn {
+  width: 100%;
+}
+/* contact end */
+
+/* main end here */
